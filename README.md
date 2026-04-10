@@ -1,3 +1,11 @@
+```
+ ████████╗ █████╗ ███╗   ███╗ █████╗ ███╗   ██╗███╗   ██╗ █████╗
+ ╚══██╔══╝██╔══██╗████╗ ████║██╔══██╗████╗  ██║████╗  ██║██╔══██╗
+    ██║   ███████║██╔████╔██║███████║██╔██╗ ██║██╔██╗ ██║███████║
+    ██║   ██╔══██║██║╚██╔╝██║██╔══██║██║╚██╗██║██║╚██╗██║██╔══██║
+    ██║   ██║  ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██║ ╚████║██║  ██║
+    ╚═╝   ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝  ╚═╝
+```
 
 <div align="center">
 
@@ -60,7 +68,11 @@ const tamanna = {
 
 ---
 
-## 📊 github stats
+## 📊 activity overview
+
+> live stats pulled straight from github — updates every 24h
+
+### stats + top languages
 
 <div align="center">
 
@@ -70,11 +82,117 @@ const tamanna = {
 
 </div>
 
+### 🔥 streak
+
 <div align="center">
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=tamannathakur&theme=dark&hide_border=true&background=0D1117&ring=3FB950&fire=F78166&currStreakLabel=3FB950&sideLabels=8B949E&dates=484F58)](https://git.io/streak-stats)
 
 </div>
+
+### 📅 contribution heatmap
+
+<div align="center">
+
+[![Tamanna's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=tamannathakur&bg_color=0d1117&color=3fb950&line=3fb950&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+### 🐍 commit snake
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tamannathakur/tamannathakur/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
+</div>
+
+<details>
+<summary><code>→ activate the snake (click to expand)</code></summary>
+
+Create `.github/workflows/snake.yml`:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+</details>
+
+### 🏆 trophies
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=tamannathakur&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+### ⚡ recent activity
+
+<!--START_SECTION:activity-->
+<!-- this section auto-updates via the github action below -->
+<!--END_SECTION:activity-->
+
+> auto-populated by the workflow below 👇
+
+<details>
+<summary><code>→ activate recent activity feed (click to expand)</code></summary>
+
+Create `.github/workflows/activity.yml`:
+
+```yaml
+name: Update Activity
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "chore: update recent activity"
+          MAX_LINES: 6
+```
+
+Once set up, this section will automatically show your 6 most recent GitHub events — pushes, PRs, issues, comments — and refresh every 30 minutes.
+
+</details>
+
+---
+
+## 🔨 currently building · learning
+
+| status | what |
+|--------|------|
+| 🔨 building | next.js + ai integrations |
+| 📚 learning | docker · graphql · system design |
+| 🎯 grinding | dsa · competitive programming |
+| ✅ open to | collabs · hackathons · open source · internships |
 
 ---
 

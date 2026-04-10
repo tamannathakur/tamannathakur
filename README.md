@@ -86,58 +86,6 @@ const tamanna = {
 
 ---
 
-## 🐍 contribution graph
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/tamannathakur/tamannathakur/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
-</div>
-
-<details>
-<summary><code>→ set up the snake animation (click to expand)</code></summary>
-
-Create `.github/workflows/snake.yml`:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
-
----
-
-## 🔨 currently building · learning
-
-| status | what |
-|--------|------|
-| 🔨 building | next.js + ai integrations |
-| 📚 learning | docker · graphql · system design |
-| 🎯 grinding | dsa · competitive programming |
-| ✅ open to | collabs · hackathons · open source · internships |
-
----
-
 ## 📡 connect
 
 <div align="center">
